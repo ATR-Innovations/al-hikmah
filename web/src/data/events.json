@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Bangladesh Halal Expo - 2026",
+    "date": "May 07-09, 2026",
+    "status": "upcoming",
+    "location": "China Bangladesh Friendship Expo Center, Dhaka",
+    "image": "assets/halal_expo.png",
+    "summary": "Bangladesh Halal Expo 2026 stands as a trusted meeting point of the global halal economy, bringing together international exhibitors, buyers, innovators, and policymakers on one prestigious platform. Guided by the principles of halal, ethical trade, and sustainability, the Expo reflects a shared vision of inclusive growth and responsible commerce.",
+    "content": "<p>Bangladesh Halal Expo 2026 stands as a trusted meeting point of the global halal economy, bringing together international exhibitors, buyers, innovators, and policymakers on one prestigious platform. Guided by the principles of halal, ethical trade, and sustainability, the Expo reflects a shared vision of inclusive growth and responsible commerce.</p><p><strong>2026 Highlights:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>15,000+ sqm International Exhibition Area</li><li>Participation from 40+ Countries</li><li>700+ Hosted International Buyers</li><li>Organized in collaboration with OIC-affiliated Institutions</li><li>Specialized Zones: NOV, Private Label & SEFPEX</li><li>Platform for Global B2B Meetings & Halal Trade Forums</li></ul><button class='bg-primary text-white px-6 py-2 rounded font-bold'>Register Now</button>"
+  },
+  {
+    "id": 2,
+    "title": "Quran Meaning & Tafsir Event",
+    "date": "Apr 20, 2026",
+    "status": "upcoming",
+    "location": "Istanbul, Turkey",
+    "image": "assets/event-02.jpg",
+    "summary": "Deep dive into Quranic interpretation with leading Islamic scholars and Mufassiroon.",
+    "content": "<p>Explore the profound meanings of the Quran with renowned Islamic scholars.</p><p><strong>Program Highlights:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Daily Tafsir Sessions</li><li>Interactive Q&A with Scholars</li><li>Workshops on Quranic Arabic</li><li>Book Launch: 'Modern Tafsir Perspectives'</li></ul><p>Duration: 5 Days | Language: Arabic, English, Urdu</p><button class='bg-primary text-white px-6 py-2 rounded font-bold'>Register Now</button>"
+  },
+  {
+    "id": 3,
+    "title": "Islamic History & Culture Expo",
+    "date": "May 10, 2026",
+    "status": "ongoing",
+    "location": "Cairo, Egypt",
+    "image": "assets/event-03.jpg",
+    "summary": "Celebrate 1400+ years of Islamic civilization through exhibitions, artifacts, and cultural performances.",
+    "content": "<p>Discover the rich heritage and contributions of Islamic civilization to world culture.</p><p><strong>Exhibition Areas:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Islamic Architecture Through Ages</li><li>Scientific Achievements & Innovations</li><li>Art, Calligraphy & Craftsmanship</li><li>Literature & Poetry</li><li>Traditional Clothing & Fashion</li></ul><p>Live demonstrations, workshops, and cultural performances daily.</p><button class='bg-primary text-white px-6 py-2 rounded font-bold'>Get Tickets</button>"
+  },
+  {
+    "id": 4,
+    "title": "Quiz Competition on Islamic Knowledge",
+    "date": "Jun 05, 2026",
+    "status": "upcoming",
+    "location": "London, UK",
+    "image": "assets/Event-01.jpg",
+    "summary": "Test your Islamic knowledge in this competitive quiz covering Quran, Hadith, Islamic History, and Fiqh.",
+    "content": "<p>Challenge yourself in our comprehensive Islamic knowledge quiz competition.</p><p><strong>Competition Categories:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Individual Quiz Championship</li><li>Team Category (4 members)</li><li>Youth League (Ages 12-18)</li><li>University Challenge</li></ul><p><strong>Prize Pool:</strong> $100,000 | <strong>Registration Fee:</strong> Free for youth category</p><button class='bg-primary text-white px-6 py-2 rounded font-bold'>Register Now</button>"
+  },
+  {
+    "id": 5,
+    "title": "Mosque Architecture & Design Symposium",
+    "date": "Jul 12, 2026",
+    "status": "upcoming",
+    "location": "Kuala Lumpur, Malaysia",
+    "image": "assets/event-02.jpg",
+    "summary": "Explore contemporary mosque design and restoration of historical Islamic architecture.",
+    "content": "<p>A comprehensive symposium on mosque architecture combining tradition with modern sustainability.</p><p><strong>Topics Covered:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Historical Mosque Preservation</li><li>Modern Sustainable Design</li><li>Calligraphy & Interior Decoration</li><li>Community Space Integration</li></ul><p>Featuring renowned architects and heritage conservationists from around the world.</p><button class='bg-primary text-white px-6 py-2 rounded font-bold'>Register Now</button>"
+  },
+  {
+    "id": 6,
+    "title": "Islamic Awareness & Education Movement",
+    "date": "Aug 01, 2026",
+    "status": "ongoing",
+    "location": "Global Online",
+    "image": "assets/event-03.jpg",
+    "summary": "Global campaign to promote Islamic education and counter misconceptions about Islam.",
+    "content": "<p>Join our international movement to educate the world about true Islamic teachings and values.</p><p><strong>Campaign Initiatives:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Online Lectures & Webinars</li><li>Educational Documentary Series</li><li>Social Media Awareness Campaign</li><li>Community Outreach Programs</li></ul><p>Participants needed for content creation, translation, and community engagement.</p><button class='bg-primary text-white px-6 py-2 rounded font-bold'>Join Movement</button>"
+  },
+  {
+    "id": 7,
+    "title": "Halal Expo 2026",
+    "date": "Sep 08, 2026",
+    "status": "upcoming",
+    "location": "Singapore",
+    "image": "assets/Event-01.jpg",
+    "summary": "World's largest halal food, beverage, cosmetics, and lifestyle products exhibition.",
+    "content": "<p>Experience the growing halal industry with 500+ exhibitors from 40+ countries.</p><p><strong>Exhibition Features:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Halal Food & Beverage Showcase</li><li>Cosmetics & Personal Care</li><li>Fashion & Modest Wear</li><li>Tourism & Hospitality</li><li>Financial Services</li><li>Networking & B2B Meetings</li></ul><p>Conferences, cooking demonstrations, and product launches throughout the event.</p><button class='bg-primary text-white px-6 py-2 rounded font-bold'>Book Booth</button>"
+  },
+  {
+    "id": 8,
+    "title": "Educational Expo: Islamic Learning Pathways",
+    "date": "Oct 01, 2026",
+    "status": "upcoming",
+    "location": "Beirut, Lebanon",
+    "image": "assets/event-02.jpg",
+    "summary": "Comprehensive educational expo featuring Islamic schools, universities, and online learning platforms.",
+    "content": "<p>Discover educational opportunities in Islamic and secular fields across the Muslim world.</p><p><strong>Participating Institutions:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Top Islamic Universities</li><li>International School Networks</li><li>Online Learning Platforms</li><li>Scholarship Programs</li><li>Vocational Training Centers</li></ul><p>Meet educators, get counseling, and explore scholarship opportunities.</p><button class='bg-primary text-white px-6 py-2 rounded font-bold'>Register Now</button>"
+  },
+  {
+    "id": 9,
+    "title": "Islamic Finance & Economics Conference",
+    "date": "Oct 15, 2026",
+    "status": "previous",
+    "location": "Bahrain",
+    "image": "assets/event-03.jpg",
+    "summary": "Discuss Islamic banking, Sukuk markets, and Shariah-compliant investments.",
+    "content": "<p>A pivotal gathering of Islamic finance experts and economic leaders.</p><p><strong>Key Discussions:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Digital Islamic Finance</li><li>Cryptocurrency & Blockchain in Islamic Finance</li><li>Sustainable Development Goals</li><li>Investment in Muslim Communities</li></ul>"
+  },
+  {
+    "id": 10,
+    "title": "Interfaith Dialogue Summit",
+    "date": "Nov 05, 2026",
+    "status": "previous",
+    "location": "Vienna, Austria",
+    "image": "assets/Event-01.jpg",
+    "summary": "Building bridges between Muslim, Christian, Jewish, and other faith communities worldwide.",
+    "content": "<p>A historic gathering promoting understanding and cooperation between faiths.</p><p><strong>Goals:</strong></p><ul class='list-disc pl-5 mt-2 mb-4'><li>Interfaith Peace Initiatives</li><li>Joint Humanitarian Projects</li><li>Educational Exchange Programs</li><li>Combating Extremism Together</li></ul>"
+  }
+]
