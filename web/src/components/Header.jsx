@@ -45,36 +45,36 @@ const Header = () => {
 
   const navlist = [
     {
-        id: "about",
-        name: "About",
-        link: "/about",
+      id: "about",
+      name: "About",
+      link: "/about",
     },
     {
-        id: "accademics",
-        name: "Academics",
-        link: "/accademics",
+      id: "academics",
+      name: "Academics",
+      link: "/academics",
     },
     {
-        id: "carriculum", 
-        name: "Curriculum",
-        link: "/carriculum",
+      id: "curriculum",
+      name: "Curriculum",
+      link: "/curriculum",
     },
     {
-        id: "notices",
-        name: "Notices",
-        link: "/notices",
+      id: "notices",
+      name: "Notices",
+      link: "/notices",
     },
     {
-        id: "gallery",
-        name: "Gallery",
-        link: "/gallery",
+      id: "gallery",
+      name: "Gallery",
+      link: "/gallery",
     },
     {
-        id: "contact",
-        name: "Contact",
-        link: "/contact",
+      id: "contact",
+      name: "Contact",
+      link: "/contact",
     },
-];
+  ];
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -98,168 +98,139 @@ const Header = () => {
   };
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex w-full flex-col">
       {/* Top Bar: Date & Auth */}
-      <div className="w-full flex flex-col md:flex-row justify-between items-center gap-2 px-4 py-2 bg-[#127492] text-white text-sm dark:bg-[#127492] dark:text-gray-200">
-        {/* Date Info */}
-        <div className="flex flex-wrap items-center gap-2 text-center">
-          <FaRegCalendarCheck />
-          <span>{engDay} |</span>
-          <span>{engDate} |</span>
-          <span>{todayBangla} |</span>
-          <span>{hijriDate}</span>
-        </div>
+      <div className="bg-[#127492] text-white text-sm dark:bg-[#127492] dark:text-gray-200">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-2 px-4 py-2 sm:px-6 md:flex-row lg:px-8">
+          {/* Date Info */}
+          <div className="flex flex-wrap items-center justify-center gap-2 text-center md:justify-start">
+            <FaRegCalendarCheck />
+            <span>{engDay} |</span>
+            <span>{engDate} |</span>
+            <span>{todayBangla} |</span>
+            <span>{hijriDate}</span>
+          </div>
 
-        {/* Auth Links */}
-        <div className="flex items-center gap-3 font-medium">
-          {user ? (
-            <div className="flex items-center gap-2 cursor-pointer">
-              <span>{user?.name}</span>
-              {user?.role !== "user" && (
-                <>
-                  <span className="text-xs text-gray-400">|</span>
-                  <span
-                    className="text-xs text-gray-400"
-                    onClick={() => navigate("/dashboard")}
-                  >
-                    ({user?.role})
-                  </span>
-                </>
-              )}
+          {/* Auth Links */}
+          <div className="flex items-center gap-3 font-medium">
+            {user ? (
+              <div className="flex items-center gap-2 cursor-pointer">
+                <span>{user?.name}</span>
+                {user?.role !== "user" && (
+                  <>
+                    <span className="text-xs text-gray-400">|</span>
+                    <span
+                      className="text-xs text-gray-400"
+                      onClick={() => navigate("/dashboard")}
+                    >
+                      ({user?.role})
+                    </span>
+                  </>
+                )}
 
-              <FaRightToBracket title="Logout" onClick={handleLogout} />
-            </div>
-          ) : (
-            <>
-              <div
-                className="flex items-center gap-1 cursor-pointer hover:underline"
-                onClick={handleGoToLogin}
-              >
-                <FaRightToBracket />
-                <span>Login</span>
+                <FaRightToBracket title="Logout" onClick={handleLogout} />
               </div>
-              <span>|</span>
-              <div
-                className="flex items-center gap-1 cursor-pointer hover:underline"
-                onClick={handleGoToRegister}
-              >
-                <FaUserPlus />
-                <span>Register</span>
-              </div>
-            </>
-          )}
-
+            ) : (
+              <>
+                <div
+                  className="flex items-center gap-1 cursor-pointer hover:underline"
+                  onClick={handleGoToLogin}
+                >
+                  <FaRightToBracket />
+                  <span>Login</span>
+                </div>
+                <span>|</span>
+                <div
+                  className="flex items-center gap-1 cursor-pointer hover:underline"
+                  onClick={handleGoToRegister}
+                >
+                  <FaUserPlus />
+                  <span>Register</span>
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
 
       {/* Header Body: Logo + Tagline */}
-      <div className="flex flex-col md:flex-row justify-between px-4 md:px-8 lg:px-16 py-4 items-center px-4 py-2 gap-2 bg-white  transition-colors">
-        {/* Logo Section */}
-        <div
-          className="flex flex-row gap-2 items-center cursor-pointer transition-transform duration-200 hover:scale-105"
-          onClick={handleGotoHome}
-        >
-          <img
-            src={flag}
-            alt="logo"
-            className="w-[90px] sm:w-[90px] md:w-[80px] lg:w-[80px] rounded-full border-2 border-emerald-800"
-          />
-          <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-6xl font-bold text-center text-emerald-800">
-            Al-Hikmah Residential School
-          </h1>
-        </div>
-
-        {/* Tagline or Right Content */}
-        {/* <div className="">
-          <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-center text-emerald-800">
-            Al-Hikmah Residential School
-          </h1>
-        </div> */}
-
-         <div
-          className="w-[200px] bg-gray-200 p-2 text-sm cursor-pointer transition-transform duration-200 hover:scale-105"
-          // onClick={handleGotoHome}
-          
-        >
-          <div className="flex flex-row gap-2 items-center">
-            <FaPhoneSquareAlt />
-            <span>Phone:</span>
-            <span className="font-bold">+880 2 888 8888</span>
+      <div className="bg-white transition-colors">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-2 px-4 py-4 sm:px-6 md:flex-row lg:px-8">
+          {/* Logo Section */}
+          <div
+            className="flex cursor-pointer flex-row items-center gap-2 transition-transform duration-200 hover:scale-105"
+            onClick={handleGotoHome}
+          >
+            <img
+              src={flag}
+              alt="logo"
+              className="w-[90px] rounded-full border-2 border-emerald-800 sm:w-[90px] md:w-[80px] lg:w-[80px]"
+            />
+            <h1 className="text-center text-2xl font-bold text-emerald-800 sm:text-3xl md:text-6xl lg:text-6xl">
+              Al-Hikmah Residential School
+            </h1>
           </div>
 
-          <div className="flex flex-row gap-2 items-center">
-            <FaIdCard />
-            <span>EIIN</span>
-            <span className="font-bold">123456</span>
+          <div className="w-[200px] bg-gray-200 p-2 text-sm transition-transform duration-200 hover:scale-105">
+            <div className="flex flex-row items-center gap-2">
+              <FaPhoneSquareAlt />
+              <span>Phone:</span>
+              <span className="font-bold">+880 2 888 8888</span>
+            </div>
+
+            <div className="flex flex-row items-center gap-2">
+              <FaIdCard />
+              <span>EIIN</span>
+              <span className="font-bold">123456</span>
+            </div>
           </div>
-          
         </div>
       </div>
 
-        <nav className="bg-[#127492] text-white dark:bg-[#127492] dark:text-gray-200 shadow-md">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap">
-            {/* Left - Logo/Home */}
-            <div className="flex items-center gap-2">
-            <NavLink to="/" className="text-xl font-bold flex items-center gap-2">
-                <FaHome />
-                <span className="hidden sm:inline">Home</span>
+      <nav className="bg-[#127492] text-white shadow-md dark:bg-[#127492] dark:text-gray-200">
+        <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+          {/* Left - Logo/Home */}
+          <div className="flex items-center gap-2">
+            <NavLink to="/" className="flex items-center gap-2 text-xl font-bold">
+              <FaHome />
+              <span className="hidden sm:inline">Home</span>
             </NavLink>
-            </div>
+          </div>
 
-            {/* Mobile menu button */}
-            <div className="block md:hidden">
-            <button
-                onClick={toggleMenu}
-                className="text-white focus:outline-none"
-            >
-                <FaBars size={22} />
+          {/* Mobile menu button */}
+          <div className="block md:hidden">
+            <button onClick={toggleMenu} className="text-white focus:outline-none">
+              <FaBars size={22} />
             </button>
-            </div>
+          </div>
 
-            {/* Menu items */}
-            <div
-            className={`w-full md:flex md:items-center md:w-auto transition-all duration-300 ease-in-out ${
-                isOpen ? "block" : "hidden"
+          {/* Menu items */}
+          <div
+            className={`w-full transition-all duration-300 ease-in-out md:flex md:w-auto ${
+              isOpen ? "block" : "hidden"
             }`}
-            >
-            <ul className="md:flex md:space-x-4 flex flex-col md:flex-row mt-3 md:mt-0">
-                {navlist.map((cat) => (
+          >
+            <ul className="mt-3 flex flex-col md:mt-0 md:flex md:flex-row md:space-x-4">
+              {navlist.map((cat) => (
                 <li key={cat.id}>
-                    <NavLink
-                    to={`/newsfeed/${cat.id}`}
+                  <NavLink
+                    to={cat.link}
                     className={({ isActive }) =>
-                        `block px-4 py-2 text-sm font-medium rounded transition duration-300 ${
+                      `block rounded px-4 py-2 text-sm font-medium transition duration-300 ${
                         isActive
-                            ? "bg-gray-800 text-white dark:bg-gray-800 dark:text-white"
-                            : "hover:bg-gray-700 hover:text-white"
-                        }`
+                          ? "bg-gray-800 text-white dark:bg-gray-800 dark:text-white"
+                          : "hover:bg-gray-700 hover:text-white"
+                      }`
                     }
-                    >
+                  >
                     {cat.name}
-                    </NavLink>
+                  </NavLink>
                 </li>
-                ))}
+              ))}
             </ul>
-
-            {/* Search bar */}
-            {/* <div className="mt-3 md:mt-0 md:ml-4 flex items-center w-full md:w-auto">
-                <input
-                type="text"
-                placeholder="Search..."
-                className="px-3 py-1 rounded-l bg-white text-gray-800 w-full md:w-64 focus:outline-none dark:bg-gray-100 dark:text-gray-900"
-                />
-                <button className="bg-[#116A7B] hover:bg-[#0F4C5C] text-white px-4 py-1 rounded-r transition duration-300">
-                Search
-                </button>
-            </div> */}
-
-            {/* <div className="flex items-center gap-2 position-absolute">
-                <ThemeToggle />
-            </div> */}
-            </div>
+          </div>
         </div>
-        </nav>
-      
+      </nav>
     </div>
   );
 };

@@ -1,7 +1,4 @@
-/* Import Tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Koro Animation Library CDN - will be included via script tag in HTML */
 
@@ -25,7 +22,7 @@
 
 body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
-  @apply bg-sky-light text-text-primary antialiased;
+  @apply bg-[#F5F9FC] text-[#1F2937] antialiased;
 }
 
 /* Tailwind Config Overrides */
@@ -101,7 +98,8 @@ body {
 
 /* Page Visibility */
 .page-section {
-  @apply hidden animate-fadeIn;
+  @apply hidden;
+  animation: fadeIn 0.4s ease-in-out;
 }
 
 .page-section.active-section {
