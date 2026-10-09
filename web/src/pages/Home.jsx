@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import TeachersSection from "../components/TeachersSection";
 
 const Home = () => {
     // const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
             <AcademicSection />
             <AboutSection />
             <AdvisorBoard />
+            <TeachersSection limit={4} />
             <Gallery />
             <ContactSection />
             <Footer />  

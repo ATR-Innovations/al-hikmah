@@ -55,6 +55,11 @@ const Header = () => {
       link: "/academics",
     },
     {
+      id: "teachers",
+      name: "Teachers",
+      link: "/teachers",
+    },
+    {
       id: "curriculum",
       name: "Curriculum",
       link: "/curriculum",

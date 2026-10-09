@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Md. Rahman",
+    "designation": "Head of Senior Secondary Department",
+    "studyIn": "M.A. in Education, University of Dhaka",
+    "subject": "Mathematics",
+    "experience": "12 years teaching experience",
+    "email": "rahman@alhikmah.edu.bd",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+    "bio": "Teacher Rahman focuses on building critical thinking, mathematical confidence, and problem-solving skills among learners."
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "designation": "Science Teacher",
+    "studyIn": "B.Sc. & M.Sc. in Biology, Jahangirnagar University",
+    "subject": "Biology",
+    "experience": "9 years teaching experience",
+    "email": "nusrat@alhikmah.edu.bd",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+    "bio": "She inspires students through practical experiments, curiosity-driven learning, and a strong focus on life sciences."
+  },
+  {
+    "id": 3,
+    "name": "Abdul Karim",
+    "designation": "Islamic Studies Teacher",
+    "studyIn": "M.A. in Islamic Studies, University of Chittagong",
+    "subject": "Islamic Studies",
+    "experience": "15 years teaching experience",
+    "email": "karim@alhikmah.edu.bd",
+    "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80",
+    "bio": "Teacher Karim guides students with a balanced understanding of Islamic values, ethics, and contemporary relevance."
+  },
+  {
+    "id": 4,
+    "name": "Shamima Akter",
+    "designation": "English Language Teacher",
+    "studyIn": "M.A. in English, Dhaka University",
+    "subject": "English",
+    "experience": "10 years teaching experience",
+    "email": "shamima@alhikmah.edu.bd",
+    "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80",
+    "bio": "She helps students build communication skills through literature, speaking practices, and thoughtful language learning."
+  },
+  {
+    "id": 5,
+    "name": "Mohammad Ali",
+    "designation": "Physics Teacher",
+    "studyIn": "M.Sc. in Physics, Rajshahi University",
+    "subject": "Physics",
+    "experience": "11 years teaching experience",
+    "email": "ali@alhikmah.edu.bd",
+    "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&q=80",
+    "bio": "His classes encourage analytical thinking and practical understanding of scientific concepts and real-world applications."
+  },
+  {
+    "id": 6,
+    "name": "Farhana Yasmin",
+    "designation": "Junior Section Coordinator",
+    "studyIn": "M.A. in Sociology, Jagannath University",
+    "subject": "Social Science",
+    "experience": "8 years teaching experience",
+    "email": "farhana@alhikmah.edu.bd",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    "bio": "She believes in nurturing young learners through empathy, positive discipline, and student-centered classroom practices."
+  }
+]

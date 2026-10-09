@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const AdvisorBoard = () => {
+const AdvisorBoard = ({ limit = 3, showViewAll = true }) => {
   const [selectedAdvisor, setSelectedAdvisor] = useState(null);
+  const navigate = useNavigate();
 
   const advisors = [
     {
@@ -64,21 +66,29 @@ const AdvisorBoard = () => {
   ];
 
   const chief = advisors.find(a => a.isChief);
-  const others = advisors.filter(a => !a.isChief);
+  const others = advisors.filter(a => !a.isChief).slice(0, limit);
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-blue-50">
-      <div className="max-w-7xl mx-auto px-4">
-        
-        {/* Section Header (Curriculum Style) */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-            উপদেষ্টা মন্ডলী <span className="text-blue-600">(Board of Advisors)</span>
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto italic">
-            আমাদের শিক্ষা প্রতিষ্ঠানের স্বপ্ন বাস্তবায়নে যাদের সুনিপুণ দিকনির্দেশনা আমাদের পথ চলায় সাহস যোগায়।
-          </p>
-          <div className="h-1.5 w-24 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+              Board of Advisors
+            </p>
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+              উপদেষ্টা মন্ডলী
+            </h2>
+          </div>
+
+          {showViewAll && (
+            <button
+              onClick={() => navigate('/about')}
+              className="inline-flex items-center justify-center rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700"
+            >
+              View All Advisors
+            </button>
+          )}
         </div>
 
         {/* Chief Advisor */}

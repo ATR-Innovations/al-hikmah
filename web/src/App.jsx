@@ -17,6 +17,7 @@ import Curriculum from "./components/Curriculum";
 import NoticeBoard from "./components/NoticeBoard";
 import Gallery from "./components/Gallery";
 import ContactSection from "./components/ContactSection";
+import TeachersSection from "./components/TeachersSection";
 
 const SectionPage = ({ children }) => (
   <>
@@ -31,8 +32,9 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/about" element={<SectionPage><AboutSection /></SectionPage>} />
+        <Route path="/about" element={<SectionPage><AboutSection showAdvisors /></SectionPage>} />
         <Route path="/academics" element={<SectionPage><AcademicSection /></SectionPage>} />
+        <Route path="/teachers" element={<SectionPage><TeachersSection limit={Infinity} showViewAll={false} /></SectionPage>} />
         <Route path="/curriculum" element={<SectionPage><Curriculum /></SectionPage>} />
         <Route path="/curriculumn" element={<SectionPage><Curriculum /></SectionPage>} />
         <Route path="/notices" element={<SectionPage><NoticeBoard fullPage /></SectionPage>} />
